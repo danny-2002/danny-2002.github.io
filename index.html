@@ -10,46 +10,66 @@
 </head>
 </center>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+body {
+  margin: 0;
+  font-size: 28px;
 }
 
-li {
-    float: left;
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-
+#navbar {
+  overflow: hidden;
+  background-color: #333;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.active {
-    background-color: #4CAF50;
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 </style>
 </head>
-<body>
-<ul> 
-	<li><a href="index.html">Home</a></li>
-	<li><a href="codingportfolio.html">Coding portfolio</a></li>
-	<li><a href="mylife.html">My Life</a></li>
-	<li><a href="About.html">About</a></li>
-	<li><a href="contact.html">Contact</a></li>
-</ul>
-</body>
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="codingportfolio.html">Coding Portfolio</a>
+  <a href="mylife.html">My Life</a>
+  <a href="About.html">About</a></li>
+  <a href="contact.html">Contact</a></li>
+</div>
 <body>
 	<p> My name is Daniel Chavez. Im a junior at Camelback Highschool. Hobbies that I have are hanging out with friends and skating. I enjoy cruising in my skateboard around downtown Phoenix at night. Most of my time is spent going to school or just spending time with family and friends.
 
