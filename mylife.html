@@ -1,8 +1,80 @@
 <!DOCTYPE html>
-<head>
+<head> 
 </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="codingportfolio.html">Coding Portfolio</a>
+  <a href="mylife.html">My Life</a>
+  <a href="About.html">About</a></li>
+  <a href="contact.html">Contact</a></li>
+</div>
 
 <body>
+	<p>Nothing very important goes on in my life besides going to school, going home, studying, and hanging out with my friends.
 </body>
+
+<p id="demo">Dont worry</p>
+
+<button type="button" onclick="myFunction()">Click Me</button>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Be Happy";
+}
+</script>
 
 <html>
